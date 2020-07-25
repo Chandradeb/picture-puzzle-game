@@ -46,7 +46,7 @@ $(document).ready(function () {
             return;
         }
         turnCnt++;
-        turnMsg.innerHTML = turnCnt;
+        turnMsg.innerHTML = "Turn: " + turnCnt;
         temp1 = checkboxArray[0];
         temp2 = checkboxArray[1];
         document.getElementById(temp1).checked = false;
@@ -113,12 +113,12 @@ function assignImage() {
     img8.src = imageArray[7];
     img9.src = imageArray[8];
     turnCnt = 0;
-    turnMsg.innerHTML = turnCnt;
+    turnMsg.innerHTML = "Turn: " + turnCnt;
 }
 
 function checkAns(){
     if(imageArray[0] == "i1.jpg" && imageArray[1] == "i2.jpg" && imageArray[2] == "i3.jpg" && imageArray[3] == "i4.jpg" && imageArray[4] == "i5.jpg" && imageArray[5] == "i6.jpg" && imageArray[6] == "i7.jpg" && imageArray[7] == "i8.jpg" && imageArray[8] == "i9.jpg"){
-        turnMsg.innerHTML = "Congratulations!!! You cracked the puzzle in " + turnCnt + " turns. take a look at your achievement for 10 seconds before it disappears.";
+        turnMsg.innerHTML = "Congratulations!!! You cracked the puzzle in " + turnCnt + " turns. Take a look at your achievement for 10 seconds before it disappears.";
         document.getElementById("swapButton").disabled = true;
         setTimeout(function(){document.getElementById("swapButton").disabled = false;},10000);
         setTimeout(function(){assignImage();}, 11000);
