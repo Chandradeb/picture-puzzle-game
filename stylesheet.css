@@ -1,0 +1,52 @@
+#p1 {
+    margin: 0;    
+}
+
+#p2 {
+    margin: 0;   
+}
+
+#p3 {
+    margin: 0;  
+}
+
+p{
+    color:darkslateblue;
+}
+
+h1 {
+    color:brown;
+}
+h2 {
+    font-size: 50;
+}
+
+body {
+    background-color: burlywood;
+}
+
+#swapButton{
+    font-size: 30;
+    color:cyan;
+    background-color:black;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+
+label:before {
+  content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/unchecked_checkbox.png");
+  position:absolute;
+  z-index: 100;
+}
+
+:checked+label:before {
+  content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/checked_checkbox.png");
+}
+
+#turns{
+    font-size: 30;
+    background-color: burlywood;
+}
